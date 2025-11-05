@@ -1,0 +1,26 @@
+package com.example.api.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import java.util.List;
+import com.example.api.model.Announcement;
+import com.example.api.service.AnnouncementService;
+
+@CrossOrigin(origins = "http://localhost:5173")
+@RestController
+@RequestMapping("/api/announcements")
+public class AnnouncementController {
+
+    @Autowired
+    private AnnouncementService announcementService;
+
+    @GetMapping
+    public List<Announcement> getAllAnnouncements() {
+        return announcementService.getAllAnnouncements();
+    }
+
+    @PostMapping
+    public Announcement createAnnouncement(@RequestBody Announcement announcement) {
+        return announcementService.saveAnnouncement(announcement);
+    }
+}

@@ -1,0 +1,269 @@
+/* =============================== */
+/* 1. Footer Base and Theme */
+/* =============================== */
+.footer {
+  position: relative;
+  background: radial-gradient(circle at 20% 20%, #0e1628, #0b1220 70%);
+  color: #f8faff;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  padding-top: 6rem;
+  margin-top: 6rem;
+}
+
+/* Gradient overlay with subtle glow */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05), transparent 70%);
+  pointer-events: none;
+}
+
+/* =============================== */
+/* 2. Layout Grid */
+/* =============================== */
+.footer-top {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ffffff, #9bc9ff);
+  -webkit-background-clip: text;
+   background-clip: text;              /* ← standard property */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-description {
+  color: #d0e2ff;
+  line-height: 1.7;
+  margin: 1.25rem 0 2rem;
+  max-width: 400px;
+  font-weight: 400;
+}
+
+/* =============================== */
+/* 3. Contact Section */
+/* =============================== */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: #c9d7f3;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-contact p:hover {
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+  color: #9bc9ff;
+}
+
+/* =============================== */
+/* 4. Link Lists */
+/* =============================== */
+.footer-heading {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, #9bc9ff, #5a9fd8);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  padding: 0.5rem 0;
+}
+
+.footer-link {
+  color: #d0e2ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1.5px;
+  background: #9bc9ff;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* =============================== */
+/* 5. Social Media */
+/* =============================== */
+.social-links {
+  display: flex;
+  gap: 1.2rem;
+  margin: 2rem 0 1rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #d0e2ff;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.social-link:hover {
+  color: white;
+  transform: translateY(-5px);
+  background: rgba(155, 201, 255, 0.3);
+}
+
+/* =============================== */
+/* 6. Newsletter Section */
+/* =============================== */
+.newsletter-signup {
+  background: rgba(255,255,255,0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 1.5rem;
+  backdrop-filter: blur(8px);
+}
+
+.newsletter-signup p {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.newsletter-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(90deg, #7bb7f2, #5a9fd8);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+  background: linear-gradient(90deg, #5a9fd8, #408ecf);
+  transform: translateY(-2px);
+}
+
+/* =============================== */
+/* 7. Footer Bottom */
+/* =============================== */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 2rem 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #c9d7f3;
+}
+
+.footer-bottom .footer-legal {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.footer-bottom .footer-link {
+  font-size: 0.9rem;
+}
+
+/* =============================== */
+/* 8. Responsive Design */
+/* =============================== */
+@media (max-width: 1024px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-size: 1.8rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding-top: 4rem;
+  }
+
+  .social-link {
+    width: 42px;
+    height: 42px;
+  }
+
+  .newsletter-signup {
+    padding: 1.25rem;
+  }
+}

@@ -1,0 +1,48 @@
+package com.example.api.controller;
+
+import com.example.api.model.Payment;
+import com.example.api.service.PaymentService;
+import com.razorpay.*;
+import org.json.JSONObject;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/payments")
+@CrossOrigin(origins = "*")
+public class PaymentController {
+    private final PaymentService paymentService;
+
+    public PaymentController(PaymentService paymentService) {
+        this.paymentService = paymentService;
+    }
+
+    // 🔹 1. Create Razorpay Order
+    @PostMapping("/order")
+    public String createOrder(@RequestBody Payment payment) throws RazorpayException {
+        RazorpayClient client = new RazorpayClient("rzp_test_XXXXXXXXXX", "XXXXXXXXXXXXXXX"); // replace with your keys
+        JSONObject orderRequest = new JSONObject();
+        int amount = 5000 * 100; // in paise
+        orderRequest.put("amount", amount);
+        orderRequest.put("currency", "INR");
+        orderRequest.put("receipt", "txn_" + System.currentTimeMillis());
+
+        Order order = client.orders.create(orderRequest);
+        return order.toString();
+    }
+
+    // 🔹 2. Save after success
+    @PostMapping("/save")
+    public Payment savePayment(@RequestBody Payment payment) {
+        payment.setPaymentStatus("SUCCESS");
+        payment.setPaymentDate(java.time.LocalDateTime.now());
+        return paymentService.save(payment);
+    }
+
+    // 🔹 3. Get all payments for admin
+    @GetMapping
+    public List<Payment> getPayments() {
+        return paymentService.findAll();
+    }
+}

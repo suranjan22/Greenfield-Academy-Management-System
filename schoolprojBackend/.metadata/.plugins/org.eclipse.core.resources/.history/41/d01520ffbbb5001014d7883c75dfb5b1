@@ -1,0 +1,30 @@
+package com.example.api.service;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.example.api.model.Marks;
+import com.example.api.repository.MarksRepository;
+
+@Service
+public class MarksService {
+
+    @Autowired
+    private MarksRepository marksRepository;
+
+    public Marks saveMarks(Marks marks) {
+        return marksRepository.save(marks);
+    }
+
+    public List<Marks> getAllMarks() {
+        return marksRepository.findAll();
+    }
+
+    public List<Marks> getMarksByClass(String studentClass) {
+        return marksRepository.findByStudentClass(studentClass);
+    }
+
+    public List<Marks> getMarksByStudentId(Long studentId) {
+        return marksRepository.findByStudentId(studentId);
+    }
+}

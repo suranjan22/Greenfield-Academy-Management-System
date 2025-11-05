@@ -1,0 +1,252 @@
+/* =============================  
+   Modern Admission Form Styling (Solid White Version)
+   ============================= */
+
+/* ---------- Global Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Poppins", sans-serif;
+  background: #f7f9fc;
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+/* ---------- Container ---------- */
+.admission-container {
+  min-height: 100vh;
+  background-image: url("../assets/images/school.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 1rem 3rem;
+  position: relative;
+}
+
+/* ❌ Removed overlay transparency completely */
+.admission-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: none; /* no overlay */
+  z-index: 1;
+}
+
+/* ---------- Form Box ---------- */
+.admission-box {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff; /* ✅ Solid white */
+  border-radius: 20px;
+  padding: 3rem 3rem 2.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.05); /* subtle border */
+  animation: fadeInUp 0.8s ease;
+}
+
+/* ---------- Header ---------- */
+.admission-box h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #004d40;
+  margin-bottom: 2.2rem;
+  position: relative;
+}
+
+.admission-box h2::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  border-radius: 3px;
+  margin: 1rem auto 0;
+  background: linear-gradient(90deg, #00796b, #43a047);
+}
+
+/* ---------- Form Layout ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.form-full {
+  grid-column: 1 / -1;
+}
+
+/* ---------- Label ---------- */
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #00796b;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Inputs ---------- */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
+  border: 1.8px solid #e2e8f0;
+  background: #ffffff;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  color: #1f2937;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00796b;
+  box-shadow: 0 0 0 4px rgba(0, 121, 107, 0.15);
+  background: #ffffff;
+  transform: translateY(-1px);
+}
+
+::placeholder {
+  color: #94a3b8;
+}
+
+/* ---------- Select Dropdown ---------- */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%2300796b' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E<path d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  padding-right: 2.8rem;
+  cursor: pointer;
+}
+
+/* ---------- Textarea ---------- */
+textarea {
+  resize: vertical;
+  min-height: 110px;
+  line-height: 1.5;
+}
+
+/* ---------- Submit Button ---------- */
+button[type="submit"] {
+  background: linear-gradient(120deg, #00796b, #43a047);
+  color: #fff;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 25px rgba(0, 121, 107, 0.3);
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(120deg, #43a047, #00796b);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 121, 107, 0.4);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* ---------- Message ---------- */
+.message {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-left: 5px solid #43a047;
+  border-radius: 10px;
+  background: rgba(247, 255, 247, 0.9);
+  color: #1b5e20;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(67, 160, 71, 0.1);
+}
+
+/* ---------- Student ID ---------- */
+.student-id {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  border-radius: 10px;
+  border: 1.5px solid #00796b;
+  background: rgba(0, 121, 107, 0.07);
+  color: #004d40;
+  font-weight: 600;
+}
+
+.student-id strong {
+  display: block;
+  font-size: 1.25rem;
+  color: #00796b;
+  margin-top: 0.3rem;
+  font-family: "Courier New", monospace;
+}
+
+/* ---------- Animation ---------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .admission-box {
+    padding: 2.2rem 1.8rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+  }
+
+  .admission-box h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admission-box {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .admission-box h2 {
+    font-size: 1.5rem;
+  }
+
+  button[type="submit"] {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+}

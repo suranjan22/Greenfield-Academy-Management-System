@@ -1,0 +1,26 @@
+package com.example.api.controller;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import com.example.api.model.AdmissionForm;
+import com.example.api.service.AdmissionService;
+
+@CrossOrigin(origins = "http://localhost:5175")
+@RestController
+@RequestMapping("/api/admissions")
+public class AdmissionController {
+
+    @Autowired
+    private AdmissionService admissionService;
+
+    @PostMapping
+    public AdmissionForm createAdmission(@RequestBody AdmissionForm form) {
+        return admissionService.saveAdmission(form);
+    }
+
+    @GetMapping
+    public List<AdmissionForm> getAllAdmissions() {
+        return admissionService.getAllAdmissions();
+    }
+}
