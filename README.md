@@ -37,6 +37,17 @@ marks in admin dashboard
 <img width="1900" height="455" alt="image" src="https://github.com/user-attachments/assets/64c83fe1-4883-4312-b07d-e4ca8e51103f" />
 <img width="833" height="197" alt="image" src="https://github.com/user-attachments/assets/d43ad09f-b85a-413f-8fd7-260f4aba28fe" />
 
+announcement post by admin 
+<img width="1515" height="860" alt="image" src="https://github.com/user-attachments/assets/43247f0f-8a31-441f-aec1-c5ee048408ae" />
+announcement view by student 
+<img width="1290" height="383" alt="image" src="https://github.com/user-attachments/assets/a0ba05fe-fbe5-42e1-8e3d-1a2462d99700" />
+announcement database
+<img width="685" height="137" alt="image" src="https://github.com/user-attachments/assets/041b8489-394a-47aa-9700-495882ddf145" />
+
+razorpay by student 
+<img width="1185" height="695" alt="image" src="https://github.com/user-attachments/assets/7df890d2-2c39-415a-83ff-b510fb910c1e" />
+<img width="1183" height="728" alt="image" src="https://github.com/user-attachments/assets/f5b0486c-a93f-472b-82fa-d32b99d17ce6" />
+<img width="1182" height="742" alt="image" src="https://github.com/user-attachments/assets/22967d43-6ad1-4b37-b394-6324420e16f6" />
 
 
 
