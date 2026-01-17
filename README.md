@@ -21,6 +21,16 @@ admission form fill up
 <img width="702" height="248" alt="image" src="https://github.com/user-attachments/assets/d7292b58-1030-4a50-b54e-731f5be23f2f" />
 <img width="1070" height="190" alt="image" src="https://github.com/user-attachments/assets/e140ee92-364f-41fb-b2ad-f88392e36973" />
 
+admin pannel students
+<img width="1875" height="518" alt="image" src="https://github.com/user-attachments/assets/2dc0cbeb-decc-46fc-9ffd-4e94924885e4" />
+
+teachers portal 
+marks
+<img width="1745" height="606" alt="image" src="https://github.com/user-attachments/assets/28484d5b-d200-4227-9c3f-39b3b4eb5199" />
+marks in admin dashboard
+<img width="1900" height="455" alt="image" src="https://github.com/user-attachments/assets/64c83fe1-4883-4312-b07d-e4ca8e51103f" />
+<img width="833" height="197" alt="image" src="https://github.com/user-attachments/assets/d43ad09f-b85a-413f-8fd7-260f4aba28fe" />
+
 
 
 
