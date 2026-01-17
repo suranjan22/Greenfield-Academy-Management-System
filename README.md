@@ -16,6 +16,12 @@ other page
 footer
 <img width="1652" height="678" alt="image" src="https://github.com/user-attachments/assets/8a1bb2fc-0d8d-4f92-aad0-4c27eef9853a" />
 
+admission form fill up 
+<img width="1181" height="841" alt="image" src="https://github.com/user-attachments/assets/97f1cbcc-6e72-4111-b9f9-3aff017db697" />
+<img width="702" height="248" alt="image" src="https://github.com/user-attachments/assets/d7292b58-1030-4a50-b54e-731f5be23f2f" />
+<img width="1070" height="190" alt="image" src="https://github.com/user-attachments/assets/e140ee92-364f-41fb-b2ad-f88392e36973" />
+
+
 
 
 
