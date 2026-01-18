@@ -37,12 +37,12 @@ marks in admin dashboard
 <img width="1900" height="455" alt="image" src="https://github.com/user-attachments/assets/64c83fe1-4883-4312-b07d-e4ca8e51103f" />
 <img width="833" height="197" alt="image" src="https://github.com/user-attachments/assets/d43ad09f-b85a-413f-8fd7-260f4aba28fe" />
 
-## announcement posted by admin in admin dashboard 
+## Announcement posted by admin in the admin dashboard 
 <img width="1515" height="860" alt="image" src="https://github.com/user-attachments/assets/43247f0f-8a31-441f-aec1-c5ee048408ae" />
-## announcement in student dashboard  
+## Announcement in student dashboard  
 <img width="1290" height="383" alt="image" src="https://github.com/user-attachments/assets/a0ba05fe-fbe5-42e1-8e3d-1a2462d99700" />
 
-## announcement data in MySQL Workbench
+## Announcement data in MySQL Workbench
 <img width="685" height="137" alt="image" src="https://github.com/user-attachments/assets/041b8489-394a-47aa-9700-495882ddf145" />
 
 ## Students can pay their fee using ** Razorpay** 
@@ -52,6 +52,7 @@ marks in admin dashboard
 
 ## About us Page  
 <img width="1206" height="827" alt="image" src="https://github.com/user-attachments/assets/732e2633-9feb-45b4-ae48-cdb41c5221cd" />
+
 
 
 
