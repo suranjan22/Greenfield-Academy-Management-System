@@ -27,7 +27,7 @@
 ## Admin login and registration 
 <img width="675" height="441" alt="image" src="https://github.com/user-attachments/assets/9e45a928-8458-4cd1-b541-b97f4281b646" />
 
-## Students' data can viwed form Admin panel
+## Students' data can viewed form Admin panel
 <img width="1875" height="518" alt="image" src="https://github.com/user-attachments/assets/2dc0cbeb-decc-46fc-9ffd-4e94924885e4" />
 
 ## Teachers login and signup
@@ -59,6 +59,7 @@
 
 ## About us Page  
 <img width="1206" height="827" alt="image" src="https://github.com/user-attachments/assets/732e2633-9feb-45b4-ae48-cdb41c5221cd" />
+
 
 
 
