@@ -1,4 +1,4 @@
-# Scholaro
+# ClassEdge
 ## A full-stack academy management system using React, Spring Boot, and MySQL
 <img width="1806" height="806" alt="image" src="https://github.com/user-attachments/assets/dc1ba63b-2c1d-460c-a6ee-35a36d45f0ba" />
 
@@ -59,6 +59,7 @@
 
 ## About us Page  
 <img width="1206" height="827" alt="image" src="https://github.com/user-attachments/assets/732e2633-9feb-45b4-ae48-cdb41c5221cd" />
+
 
 
 
