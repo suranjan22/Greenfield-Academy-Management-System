@@ -44,13 +44,14 @@ announcement view by student
 announcement database
 <img width="685" height="137" alt="image" src="https://github.com/user-attachments/assets/041b8489-394a-47aa-9700-495882ddf145" />
 
-razorpay by student 
+## Students can pay their fee using ** Razorpay** 
 <img width="1185" height="695" alt="image" src="https://github.com/user-attachments/assets/7df890d2-2c39-415a-83ff-b510fb910c1e" />
 <img width="1183" height="728" alt="image" src="https://github.com/user-attachments/assets/f5b0486c-a93f-472b-82fa-d32b99d17ce6" />
 <img width="1182" height="742" alt="image" src="https://github.com/user-attachments/assets/22967d43-6ad1-4b37-b394-6324420e16f6" />
 
-about us 
+## About us Page  
 <img width="1206" height="827" alt="image" src="https://github.com/user-attachments/assets/732e2633-9feb-45b4-ae48-cdb41c5221cd" />
+
 
 
 
